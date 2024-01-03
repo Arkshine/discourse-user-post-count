@@ -6,6 +6,7 @@ export default apiInitializer("0.8", (api) => {
 
   if (siteSettings.user_post_count_in_post) {
     api.includePostAttributes("user_post_count");
+    api.includePostAttributes("user_topic_count");
 
     api.decorateWidget("poster-name:after-name", (helper) => {
       return helper.attach("user-post-count", helper.attrs);

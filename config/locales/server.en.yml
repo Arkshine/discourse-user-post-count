@@ -3,3 +3,4 @@ en:
     user_post_count_enabled: "Enable user post count"
     user_post_count_in_usercard: "Show post count in user card"
     user_post_count_in_post: "Show post count in post"
+    user_post_count_include_topic: "Include topic posts in post count"

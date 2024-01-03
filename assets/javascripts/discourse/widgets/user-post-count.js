@@ -9,7 +9,9 @@ export default createWidget("user-post-count", {
       "div.user-post-user__container",
       hbs`<UserPostCount @count={{ @data.count }} />`,
       {
-        count: attrs.user_post_count,
+        count: this.siteSettings.user_post_count_include_topic
+          ? attrs.user_post_count + attrs.user_topic_count
+          : attrs.user_post_count,
       }
     );
   },
