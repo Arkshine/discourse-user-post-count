@@ -8,7 +8,7 @@ export default apiInitializer("0.8", (api) => {
     api.includePostAttributes("user_post_count");
     api.includePostAttributes("user_topic_count");
 
-    api.decorateWidget("poster-name:after-name", (helper) => {
+    api.decorateWidget("poster-name:after", (helper) => {
       return helper.attach("user-post-count", helper.attrs);
     });
   }
