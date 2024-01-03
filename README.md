@@ -9,6 +9,7 @@ Displays the number of posts a user has made in total in the following locations
 |-------------------------------------|----------------------------------------------|---------|
 | `user_post_count_in_post`     | Whether to display the count in post         | `true`  |
 | `user_post_count_in_usercard` | Whether to display the count in usercard | `true`  |
+| `user_post_count_include_topic` | Whether to include topic posts in post count | `true`  |
 
 ### Screenshots
 
