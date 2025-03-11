@@ -1,8 +1,11 @@
-.user-post-count {
-  color: var(--primary-500);
-  margin-inline: 0.6rem;
-  font-weight: bold;
-  font-size: var(--font-down-1);
+.user-post-user__container {
+  display: flex;
+  align-items: baseline;
+
+  .user-post-count {
+    color: var(--primary-500);
+    font-size: var(--font-0);
+  }
 }
 
 #user-card .user-post-count {

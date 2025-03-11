@@ -1,6 +1,6 @@
 import Component from "@ember/component";
-import { inject as service } from "@ember/service";
-import I18n from "discourse-i18n";
+import { service } from "@ember/service";
+import { i18n } from "discourse-i18n";
 
 export default class UserPostCount extends Component {
   @service siteSettings;
@@ -18,7 +18,7 @@ export default class UserPostCount extends Component {
   }
 
   get content() {
-    return I18n.t("user_post_count.content", { count: this.postCount });
+    return i18n("user_post_count.content", { count: this.postCount });
   }
 
   get postCount() {

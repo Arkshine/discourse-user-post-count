@@ -11,3 +11,4 @@ plugins:
   user_post_count_include_topic:
     default: true
     client: true
+
